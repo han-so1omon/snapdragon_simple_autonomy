@@ -1,0 +1,10 @@
+#ifndef PLATFORM_H
+#define PLATFORM_H
+
+#define SERIAL_SIZE_OF_DATA_BUFFER 128
+#define SERIAL_WRITE_DELAY_USEC (8000 * 10)
+
+#define MAX_UART_DEV_NUM 6
+#define MAX_MSG_LEN 256
+
+#endif

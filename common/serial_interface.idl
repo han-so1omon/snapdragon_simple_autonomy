@@ -1,0 +1,18 @@
+#ifndef SERIAL_INTERFACE_IDL
+#define SERIAL_INTERFACE_IDL
+
+#include "AEEStdDef.idl"
+
+interface serial_interface{
+    long serial_open();
+    long serial_close(in long fd);
+    long serial_read_callback(in long fd);
+    long serial_read(in long fd, rout char rx_buffer);
+    long serial_write(in long fd, in string tx_buffer,
+                      in long len);
+    long serial_read_write(in long fd, rout char rx_buffer,
+        in string tx_buffer, in long len);
+     
+};
+
+#endif /*SERIAL_INTERFACE_IDL*/

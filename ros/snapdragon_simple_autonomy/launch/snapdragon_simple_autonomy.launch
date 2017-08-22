@@ -1,0 +1,8 @@
+<launch>
+  <!--
+  <node name="vislam_node" pkg="snap_ros_examples" type="snap_vislam_node" />
+  -->
+  <node name="simple_autonomy" pkg="snapdragon_simple_autonomy"
+   type="snapdragon_simple_autonomy_node" />
+</launch>
+<!-- vim: set ft=xml noet : --> 
